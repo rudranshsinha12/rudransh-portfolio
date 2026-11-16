@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudransh Sinha | Portfolio</title>
+
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f8fa;
+            color: #252a34;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Navigation */
+        header {
+            background-color: white;
+            border-bottom: 1px solid #e8eaf0;
+        }
+
+        nav {
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3157a4;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+        }
+
+        .nav-links a:hover {
+            color: #3157a4;
+        }
+
+        /* Home section */
+        .hero {
+            background-color: white;
+            padding: 85px 0;
+        }
+
+        .tag {
+            color: #3157a4;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 15px 0;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #626b79;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 11px 20px;
+            background-color: #3157a4;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Common sections */
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #737b88;
+            margin-bottom: 25px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 22px;
+            border: 1px solid #e8eaf0;
+            border-radius: 8px;
+        }
+
+        /* Education */
+        .education {
+            border-left: 4px solid #3157a4;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 9px 16px;
+            border: 1px solid #e1e5ed;
+            border-radius: 5px;
+        }
+
+        /* Projects */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .project {
+            background-color: white;
+            border: 1px solid #e8eaf0;
+            border-radius: 8px;
+            padding: 22px;
+        }
+
+        .project h3 {
+            color: #3157a4;
+            margin-bottom: 8px;
+        }
+
+        /* Contact */
+        .contact a {
+            color: #3157a4;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #202633;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+                padding: 15px 0;
+                gap: 12px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">Rudransh.</a>
+
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="container">
+
+            <div class="tag">Computer Science Student</div>
+
+            <h1>Hi, I'm Rudransh Sinha.</h1>
+
+            <p>
+                I am a first-year Computer Science student at
+                South Asian University. I am interested in technology,
+                problem-solving and learning how computing can be
+                used to solve real-world problems.
+            </p>
+
+            <a href="#projects" class="button">
+                Explore My Journey
+            </a>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+
+            <h2>About Me</h2>
+            <p class="subtitle">A little introduction</p>
+
+            <div class="box">
+                I am currently in my first year of Computer Science
+                at South Asian University. I am building my foundation
+                in computing, exploring new technologies and learning
+                through practice.
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="container">
+
+            <h2>Education</h2>
+            <p class="subtitle">My academic background</p>
+
+            <div class="box education">
+                <h3>Bachelor's Degree - Computer Science</h3>
+                <p>South Asian University</p>
+                <p>First Year</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+
+            <h2>Skills</h2>
+            <p class="subtitle">What I am learning</p>
+
+            <div class="box">
+                I am developing my programming and problem-solving
+                skills as part of my Computer Science studies.
+                I will update this section as I learn new technologies.
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+
+            <h2>Projects</h2>
+            <p class="subtitle">My learning journey</p>
+
+            <div class="project-grid">
+
+                <div class="project">
+                    <h3>Coming Soon</h3>
+                    <p>
+                        I am learning the fundamentals of Computer
+                        Science and will add my projects here.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Learning in Progress</h3>
+                    <p>
+                        This space will feature my coursework,
+                        experiments and personal projects.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+
+            <h2>Get in Touch</h2>
+            <p class="subtitle">Feel free to connect</p>
+
+            <div class="box contact">
+                <p>
+                    I am open to learning, collaborating and
+                    connecting with people who enjoy building
+                    useful things.
+                </p>
+
+                <p style="margin-top: 15px;">
+                    <a href="mailto:your-email@example.com">
+                        Email Me
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Rudransh Sinha. </p>
+    </footer>
+
+</body>
+</html>
